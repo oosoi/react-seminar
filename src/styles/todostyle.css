@@ -1,0 +1,93 @@
+/* todostyle.css */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #333;
+}
+
+input[type="text"] {
+  width: calc(100% - 80px);
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  margin-bottom: 20px;
+  color: #333;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.6);
+}
+
+button {
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.6);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: 12px 20px;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+li button {
+  margin-left: auto;
+}
+
+li input[type="text"] {
+  flex: 1;
+  margin-right: 10px;
+  border: none;
+  background-color: burlywood;
+  color: #333;
+  font-size: 16px;
+}
+
+li input[type="text"]:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.6);
+}
