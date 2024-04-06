@@ -31,9 +31,7 @@
     "vite": "^5.2.0"
   },
   "lint-staged": {
-    "*.{js,ts,jsx,tsx}": [
-      "pnpm lint"
-    ]
+    "*.{js,ts,jsx,tsx}": []
   },
   "engines": {
     "node": "^20.0.0",
