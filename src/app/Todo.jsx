@@ -69,45 +69,43 @@ export const Todo = () => {
 
   return (
     <>
-      <h1>Todo List oosoi</h1>
-
+      <h1 className="todo-list-header">Todo List oosoi</h1>
+  
       <input 
         type="text"
+        className="todo-input"
         value={input} 
-        onChange={(e)=> setInput(e.target.value)}//텍스트 변화 있을 때마다 실행
+        onChange={(e)=> setInput(e.target.value)}
         placeholder="오늘 할 일은 무엇인가요 ?"/>
-
-      <button onClick={()=> addTodo(input)}/*클릭하면 함수 실행*/> 
-        추가하기
-      </button>
-      <button onClick={()=> clearTodos()}>초기화하기</button>
+  
+      <button className="add-button" onClick={()=> addTodo(input)}>추가하기</button>
+      <button className="clear-button" onClick={()=> clearTodos()}>초기화하기</button>
       
-      <ul>
+      <ul className="todo-list">
         {list.map((todo) => (
-          <li key={todo.id}>
-              {todo.id === selectedId ? ( // 선택된 할 일인 경우
-                <>
-                  <input
-                    type="text"
-                    value={editingText}
-                    onChange={(e) => setEditingText(e.target.value)}
-                    placeholder="수정하세요"
-                  />
-                  <button onClick={() => changeTodo()}>저장</button>
-                </>
-              ) : (
-                <>
-            {todo.todo}
-            <button onClick ={()=> selTodo(todo.id)}>수정</button>
-            <button onClick={()=>delTodo(todo.id)}>완료!</button>
-          </>
-          )}
+          <li key={todo.id} className="todo-item">
+            {todo.id === selectedId ? (
+              <>
+                <input
+                  type="text"
+                  className="edit-input"
+                  value={editingText}
+                  onChange={(e) => setEditingText(e.target.value)}
+                  placeholder="수정하세요"
+                />
+                <button className="save-button" onClick={() => changeTodo()}>저장</button>
+              </>
+            ) : (
+              <>
+                {todo.todo}
+                <button className="edit-button" onClick ={()=> selTodo(todo.id)}>수정</button>
+                <button className="complete-button" onClick={()=>delTodo(todo.id)}>완료!</button>
+              </>
+            )}
           </li>
         ))}
-
       </ul>
-      
-      
     </>
   );
+  
 };
