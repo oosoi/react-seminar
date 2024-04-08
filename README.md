@@ -1,6 +1,6 @@
 # React Seminar
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/78ba3ea8-02f2-4afe-9f51-799ebedc78a5/deploy-status)](https://app.netlify.com/sites/react-seminar/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/f788b524-9c19-4030-b59a-acd46aba38fc/deploy-status)](https://app.netlify.com/sites/incomparable-basbousa-b517ba/deploys)
 [![Gitmoji](https://img.shields.io/badge/gitmoji-%20😜%20😍-FFDD67.svg)](https://gitmoji.dev)
 
 A seminar for beginners who are interested in learning [React](https://react.dev).
@@ -24,3 +24,4 @@ Run the development server:
 ```bash
 pnpm dev
 ```
+z
