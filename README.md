@@ -2,7 +2,7 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/f788b524-9c19-4030-b59a-acd46aba38fc/deploy-status)](https://app.netlify.com/sites/incomparable-basbousa-b517ba/deploys)
 [![Gitmoji](https://img.shields.io/badge/gitmoji-%20😜%20😍-FFDD67.svg)](https://gitmoji.dev)
 
-Netlify Deploy https://main--incomparable-basbousa-b517ba.netlify.app/todo
+Netlify Deploy https://main--incomparable-basbousa-b517ba.netlify.app
 A seminar for beginners who are interested in learning [React](https://react.dev).
 
 ## Getting Started
